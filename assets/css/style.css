@@ -31,11 +31,6 @@
     justify-content: right;
   }
   
-  nav a {
-    color: #13293d;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
   
   /* 
   What is the flex-wrap property?
@@ -124,4 +119,40 @@
     filter: none;
     -webkit-filter: grayscale(0%);
   }
+
+  a:link {
+    color: white;
+  }
   
+  a:visited {
+    color: white;
+  }
+  
+  li::before {
+    position: absolute;
+    content: attr(data-content);
+    top: 0;
+    left: 0;
+    color: rgb(119, 7, 7);
+    overflow: hidden;
+    transition: width 275ms ease;
+    width: 0;
+    white-space: nowrap;
+  }
+  
+  li:hover::before {
+    width: 100%;
+  }
+
+  
+li {
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  top: 5px;
+  font-size: 40px;
+}
+
+ul {
+  text-align: right;
+}
