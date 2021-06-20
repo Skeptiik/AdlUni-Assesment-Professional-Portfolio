@@ -141,3 +141,14 @@
     margin: 10px;
   }
   
+  .banner {
+    background-image: url(banner.jpg);
+    flex-wrap: wrap;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-size: contain;
+  }
